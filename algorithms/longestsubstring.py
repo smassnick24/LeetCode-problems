@@ -2,7 +2,8 @@
 # given a string s, find the longest substring without repeating characters
 
 class Solution:
-    def lengthOfLongestSubstring(self, string):
+    @staticmethod
+    def lengthOfLongestubstring(string):
         """Works in most cases, not all"""
         longest = ""
         substring = ""
