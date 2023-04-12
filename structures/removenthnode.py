@@ -29,6 +29,15 @@ class Solution():
                 curr += 1
                 future += 1
                 n -= 1 
+                
+    def leetcodeSolution(self, head):
+        fast , slow = head, head
+        while fast.next:
+            if not fast: return head.next
+        while fast.next:
+            fast, slow = fast.next, slow.next
+        slow.next = slow.next.next
+        return head
                    
     def test(self, head):
         representation = ""
